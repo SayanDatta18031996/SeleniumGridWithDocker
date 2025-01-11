@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [GridSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="tests" name="Test3(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.testbot.testcases.dockerSeleniumTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+          <include name="facebookOnEdgeTest"/>
+        </methods>
+      </class> <!-- com.testbot.testcases.dockerSeleniumTest -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+</suite> <!-- Failed suite [GridSuite] -->
